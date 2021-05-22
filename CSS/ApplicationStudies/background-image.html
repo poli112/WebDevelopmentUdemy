@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Padauk', sans-serif;
+        }
+        .header{
+            background-image:
+                 linear-gradient(to left bottom, rgba(102, 255, 102, 0.7), rgba(230, 255, 230, 0.7)),
+                                 url(img/bridge.jpg);                          
+            height: 95vh;
+            background-size: cover;
+            background-position: top;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+            
+        }
+
+        .heading{
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            top:  40%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .heading-main{
+            display: block;
+            font-size: 50px;
+            letter-spacing: 15px;
+        }
+        .heading-sub{
+            display: block;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+
+        .logo-box{
+            position: absolute;
+            top: 40px;
+            left: 60px;
+        }
+        
+        .logo{
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo-box">
+            <img class="logo" src="img/new-york-city-logo-with-statue-liberty_69367-37-removebg-preview.png" alt="">
+        </div>
+
+        <h1 class="heading">
+            <span class="heading-main">New York</span>
+            <span class="heading-sub">New York City</span>
+        </h1>
+
+    </header>
+    
+</body>
+</html>
